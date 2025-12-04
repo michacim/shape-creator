@@ -17,10 +17,8 @@ public class TriangleCreator extends ShapeCreator {
         // Drei zufällige Punkte erzeugen
         double x1 = randomX();
         double y1 = randomY();
-
         double x2 = randomX();
         double y2 = randomY();
-
         double x3 = randomX();
         double y3 = randomY();
 
@@ -29,14 +27,12 @@ public class TriangleCreator extends ShapeCreator {
                 x2, y2,
                 x3, y3
         );
-
         triangle.setFill(Color.color(
                 rnd.nextDouble(),
                 rnd.nextDouble(),
                 rnd.nextDouble(),
                 0.6
         ));
-
         triangle.setStroke(Color.BLACK);
 
         return triangle;

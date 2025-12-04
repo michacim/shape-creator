@@ -1,6 +1,7 @@
 package com.example.shape_creator.factory;
 
 import javafx.scene.effect.DropShadow;
+import javafx.scene.effect.GaussianBlur;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
@@ -18,6 +19,7 @@ public class EmilCreator extends ShapeCreator{
         circle.setFill(Color.color(rnd.nextDouble(), rnd.nextDouble(), rnd.nextDouble(),0.6));
         circle.setStroke(Color.BLUE);
         circle.setEffect(new DropShadow(10, Color.BLACK));
+        circle.setEffect(new GaussianBlur(10));
 
         return circle;
     }

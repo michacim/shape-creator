@@ -19,7 +19,7 @@ public class ShapeController {
     @FXML
 
     void initialize(){
-        shapeSelector.getItems().setAll("Kreis","Rechteck","Dreieck","EmilKreis");
+        shapeSelector.getItems().setAll("Kreis","Rechteck","Dreieck","EmilKreis","Ellipse");
     }
 
 
@@ -29,7 +29,7 @@ public class ShapeController {
         System.out.println(selected);
         ShapeCreator creator = getCreator(selected);
         if(creator!=null){
-            Shape shape = creator.createShape();
+            Shape shape = creator.createShape();//Polymorphie
             canvas.getChildren().add(shape);
         }
 
@@ -41,6 +41,7 @@ public class ShapeController {
             case "Rechteck" -> new RectangleCreator(canvas);
             case "Dreieck" -> new TriangleCreator(canvas);
             case "EmilKreis" -> new EmilCreator(canvas);
+            case "Ellipse" -> new EllipseCreator(canvas);
 
 
 

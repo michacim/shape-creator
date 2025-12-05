@@ -6,7 +6,7 @@ import javafx.scene.shape.Ellipse;
 import javafx.scene.shape.Shape;
 
 public class EllipseCreator extends ShapeCreator{
-    protected EllipseCreator(Pane canvas) {
+    public EllipseCreator(Pane canvas) {
         super(canvas);
     }
 

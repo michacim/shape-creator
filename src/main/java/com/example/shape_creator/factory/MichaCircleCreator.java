@@ -1,5 +1,6 @@
 package com.example.shape_creator.factory;
 
+import javafx.scene.effect.DropShadow;
 import javafx.scene.effect.Glow;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
@@ -17,7 +18,7 @@ public class MichaCircleCreator extends ShapeCreator{
         Circle circle = new Circle(randomX(),randomY(),radius);
         circle.setFill(Color.color(rnd.nextDouble(), rnd.nextDouble(), rnd.nextDouble(),0.2));
         circle.setStroke(Color.RED);
-        circle.setEffect(new Glow());
+        circle.setEffect(new DropShadow());
 
         return circle;
     }

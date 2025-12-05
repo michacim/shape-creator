@@ -16,7 +16,7 @@ public class MichaCircleCreator extends ShapeCreator{
     public Shape createShape() {
         double radius = rnd.nextDouble(15,40);
         Circle circle = new Circle(randomX(),randomY(),radius);
-        circle.setFill(Color.color(rnd.nextDouble(), rnd.nextDouble(), rnd.nextDouble(),0.2));
+        circle.setFill(Color.color(rnd.nextDouble(), rnd.nextDouble(), 0.5,0.9));
         circle.setStroke(Color.RED);
         circle.setEffect(new DropShadow());
 
